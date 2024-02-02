@@ -1,8 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Identity;
 
 namespace WebApplication5.Pages
 {
+    [Authorize]
     public class PrivacyModel : PageModel
     {
         private readonly ILogger<PrivacyModel> _logger;
@@ -11,6 +14,7 @@ namespace WebApplication5.Pages
         {
             _logger = logger;
         }
+        
 
         public void OnGet()
         {

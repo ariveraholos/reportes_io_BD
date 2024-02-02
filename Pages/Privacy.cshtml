@@ -4,5 +4,13 @@
     ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
+<AuthorizeView>
+    <Authorized>
+        <p>Use this page to detail your site's privacy policy.</p>
+    </Authorized>
+    <NotAuthorized>
+        <p>NO.</p>
+    </NotAuthorized>
+</AuthorizeView>
 
-<p>Use this page to detail your site's privacy policy.</p>
+
